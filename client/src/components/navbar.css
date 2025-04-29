@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  color:black;
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a,
+.navbar-links button {
+  color:blue;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-links button:hover,
+.navbar-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,136 @@
+/* --- Welcome Section Container --- */
+.welcome-container {
+  position: relative;
+  text-align: center;
+  min-height: 25%;
+  background-color: rgba(300, 450, 250, 0.10);/* slightly transparent */
+  overflow: hidden;
+}
+
+/* --- Welcome Content --- */
+.welcome-img-wrapper {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-img {
+  width: 55%;
+  max-width: 45%;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #333;
+  z-index: 2;
+  position: relative;
+}
+
+.welcome-desc {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* --- Fixed Icons Around Welcome Image --- */
+.icon-fixed-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows buttons and text to be clickable */
+  z-index: 1;
+}
+
+.fixed-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.fixed-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.fixed-icon.top-left {
+  top: 10%;
+  left: 15%;
+}
+
+.fixed-icon.top-right {
+  top: 10%;
+  right: 15%;
+}
+
+.fixed-icon.bottom-left {
+  bottom: 10%;
+  left: 12%;
+}
+
+.fixed-icon.bottom-right {
+  bottom: 10%;
+  right: 12%;
+}
+
+.fixed-icon.top-center {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Floating Icons (legacy if needed) --- */
+.floating-icon {
+  position: absolute;
+  width: 10%;
+  height: auto;
+  opacity: 0.85;
+  z-index: 1;
+  animation: rotateInPlace 10s linear infinite;
+  transform-origin: center center;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1) rotate(360deg);
+  opacity: 1;
+}
+
+@keyframes rotateInPlace {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: Responsive design adjustments */
+@media (max-width: 768px) {
+  .fixed-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+    color: #007BFF;
+  }
+
+  .welcome-desc {
+    font-size: 1rem;
+    color: #007BFF;
+  }
+}
