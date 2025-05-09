@@ -38,6 +38,10 @@ An innovative web application that delivers AI-generated educational content, pe
 
 ---
 
+**View the demo by clicking on the link below**
+
+https://react-edu-app.onrender.com
+
 ## 📦 Setup Instructions Client
 ```bash
    cd client
@@ -60,6 +64,3 @@ python manage.py runserver
    git clone https://github.com/Zaibonisha/django_ai_edu_app
    cd ai-education-app/backend
 
-**View the demo by clicking on the link below**
-
-https://react-edu-app.onrender.com
