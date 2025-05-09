@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-"""
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -106,13 +106,13 @@ DATABASES = {
         "PORT": "5432",       
     }
 }
-"""
 
+"""
 DATABASES = {
      "default": dj_database_url.parse(os.environ.get('DATABASE_URL'))
 
 }
-
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -159,3 +159,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # or whatever port your React app is on
 ]
+
+STATIC_ROOT = BASE_DIR/'staticfiles'
