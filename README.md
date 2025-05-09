@@ -57,5 +57,5 @@ python manage.py runserver
 
 1. **Clone the repo and navigate to the backend**
    ```bash
-   git clone https://github.com/your-username/ai-education-app.git
+   git clone https://github.com/Zaibonisha/django_ai_edu_app
    cd ai-education-app/backend
