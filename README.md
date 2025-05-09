@@ -39,11 +39,13 @@ An innovative web application that delivers AI-generated educational content, pe
 ---
 
 ## 📦 Setup Instructions Client
+```bash
    cd client
    npm install
    npm start
 
 ### 🔧 Backend Setup (Django)
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate
