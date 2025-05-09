@@ -59,3 +59,7 @@ python manage.py runserver
    ```bash
    git clone https://github.com/Zaibonisha/django_ai_edu_app
    cd ai-education-app/backend
+
+**View the demo by clicking on the link below**
+
+https://react-edu-app.onrender.com
